@@ -1,0 +1,93 @@
+/* Base styles */
+body {
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    background: linear-gradient(135deg, #0a0a0a, #2c2c2c); /* black to dark gray */
+    color: #eaeaea;
+}
+
+/* Navbar */
+nav {
+    background: rgba(20, 20, 20, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    border-bottom: 1px solid #333;
+}
+
+/* Navbar links */
+.nav-item {
+    text-decoration: none;
+    color: #eaeaea;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.nav-item:hover {
+    color: #c0c0c0;
+}
+
+/* Contact button */
+.contact-btn {
+    padding: 8px 20px;
+    background: linear-gradient(135deg, #111, #444);
+    color: #fff !important;
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.contact-btn:hover {
+    background: linear-gradient(135deg, #555, #777);
+    transform: scale(1.05);
+}
+
+/* Hero section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Overlay for cinematic effect */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+/* Left text */
+.left-text {
+    max-width: 700px;
+    position: relative;
+    z-index: 1;
+}
+
+.left-text h1 {
+    font-family: 'Orbitron', sans-serif; /* Cyber-inspired font */
+    font-size: 90px;
+    font-weight: 700;
+    margin: 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.left-text p {
+    margin-top: 20px;
+    line-height: 1.8;
+    font-size: 20px;
+    color: #d0d0d0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
